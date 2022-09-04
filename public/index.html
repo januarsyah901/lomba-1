@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tess</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="assets\fontawesome\css\fontawesome.css" rel="stylesheet" />
+    <link href="assets\fontawesome\css\brands.css" rel="stylesheet" />
+    <link href="assets\fontawesome\css\solid.css" rel="stylesheet" />
+    <link href="/node_modules/flag-icons/css/flag-icons.min.css" rel="stylesheet" />
+    <script>
+      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+  <body class="font-sans dark:bg-slate-700 scroll-smooth">
+    <!-- NavBar e ngabb -->
+    <header class="bg-transparent absolute top-0 left-0 w-full items-center">
+      <div class="container">
+        <div class="flex items-center relative justify-between">
+          <div class="px-4 lg:pl-[100px]">
+            <a href="#home" class="font-bold text-main text-lg py-6 flex"><img src="assets/img/logo.png" width="30px" alt="Logo Web" class="mr-1.5" />WeCare</a>
+          </div>
+
+          <button
+            id="theme-toggle"
+            type="button"
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 absolute lg:right-3 right-14"
+          >
+            <svg id="theme-toggle-dark-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
+          <div class="flex px-4 mr-10 items-center">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
+
+            <nav id="nav-menu" class="hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-semibold">
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#beranda" class="text-base text-dark py-2 mx-8 flex dark:text-white group-hover:text-main">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="#agenda" class="text-base text-dark py-2 mx-8 group-hover:text-main flex dark:text-white">Agenda</a>
+                </li>
+                <li class="group">
+                  <a href="#Galery" class="text-base text-dark py-2 mx-8 group-hover:text-main flex dark:text-white">Galery</a>
+                </li>
+                <li class="group">
+                  <a href="#Tentang" class="text-base text-dark py-2 mx-8 group-hover:text-main flex dark:text-white">Tentang</a>
+                </li>
+
+                <li class="group">
+                  <!-- Bahasa -->
+                  <button type="button" id="language-dropdown-button" class="dark:text-white text-base text-dark cursor-pointer hover:text-main dark:hover:text-white flex items-center mt-1 text-dark rounded-xl lg:w-40 p-2 w-full h-10">
+                    <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-id"></span>
+                    Indonesia
+                    <i id="language-dropdown-select" class="ml-[100px] lg:ml-2 fa-solid fa-angle-down transition duration-300 ease-in-out"></i>
+                  </button>
+
+                  <div id="language-dropdown-menu" class="hidden lg:absolute z-50 my-1 text-base list-none bg-white rounded-xl lg:w-40 divide-gray-100 dark:bg-gray-700 lg:shadow-xl">
+                    <ul class="py-1" role="none">
+                      <li>
+                        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-white" role="menuitem">
+                          <div class="inline-flex items-center">
+                            <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-id"></span>
+                            indonesia
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-white" role="menuitem">
+                          <div class="inline-flex items-center">
+                            <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-gb"></span>
+                            english
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Bahasa Selesai -->
+                </li>
+                <!-- Dark Mode -->
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ISII -->
+
+    <div class="mt-48 grid grid-cols-3 gap-3 md:grid-cols-5 sm:grid-cols-4 place-items-center mb-96">
+      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">1</div>
+      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">2</div>
+      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">3</div>
+      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">4</div>
+      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">5</div>
+      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">6</div>
+      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">7</div>
+      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">8</div>
+      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">9</div>
+      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">10</div>
+    </div>
+    <!-- Isi selesai -->
+
+    <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+  </body>
+</html>
