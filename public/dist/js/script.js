@@ -1,17 +1,28 @@
 // Hamburger menu
 window.onscroll = () => {
   const header = document.querySelector('header');
+  const navMenu = document.querySelector('#nav-menu');
+  const navMenu1 = document.querySelector('.nav-menu1');
+  const navMenu2 = document.querySelector('.nav-menu2');
+  const navMenu3 = document.querySelector('.nav-menu3');
   const fixed = header.offsetTop;
 
   if (window.pageYOffset > fixed) {
     header.classList.add('navbar-fixed');
+    navMenu.classList.add('text-black');
+    navMenu1.classList.add('text-black');
+    navMenu2.classList.add('text-black');
+ 
   } else {
     header.classList.remove('navbar-fixed');
+    navMenu.classList.remove('text-black');
+    navMenu1.classList.remove('text-black');
+    navMenu2.classList.remove('text-black');
+
   }
 };
 
 const hamburger = document.querySelector('#hamburger');
-const navMenu = document.querySelector('#nav-menu');
 const languageButton = document.querySelector('#language-dropdown-button');
 const languageMenu = document.querySelector('#language-dropdown-menu');
 const languagedrop = document.querySelector('#language-dropdown-select');

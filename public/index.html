@@ -12,25 +12,25 @@
     <link href="/node_modules/flag-icons/css/flag-icons.min.css" rel="stylesheet" />
     <script>
       if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
+        document.documentElement.classList.add('dark')  ;
       } else {
         document.documentElement.classList.remove('dark');
       }
     </script>
   </head>
-  <body class="font-sans dark:bg-slate-700 scroll-smooth">
+  <body class="font-sans dark:bg-slate-900 scroll-smooth">
     <!-- NavBar e ngabb -->
-    <header class="bg-transparent absolute top-0 left-0 w-full items-center">
-      <div class="container">
+    <header class="z-50 bg-transparent absolute top-0 left-0 w-full items-center transition duration-75 ease-in-out dark:shadow-white">
+      <div class="mx-16 px-2">
         <div class="flex items-center relative justify-between">
-          <div class="px-4 lg:pl-[100px]">
-            <a href="#home" class="font-bold text-main text-lg py-6 flex"><img src="assets/img/logo.png" width="30px" alt="Logo Web" class="mr-1.5" />WeCare</a>
+          <div class="px-4">
+            <a href="#home" class="nav-menu1 dark:text-white font-extrabold text-white text-2xl py-6 flex"><img src="assets/img/logo.png" width="30px" alt="Logo Web" class="mr-1.5" />WeCare</a>
           </div>
 
           <button
             id="theme-toggle"
             type="button"
-            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 absolute lg:right-3 right-14"
+            class="nav-menu2 text-white hover:bg-main dark:text-white dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 absolute lg:right-3 right-14"
           >
             <svg id="theme-toggle-dark-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
             <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -49,33 +49,40 @@
               <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
             </button>
 
-            <nav id="nav-menu" class="hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-semibold">
+            <nav
+              id="nav-menu"
+              class="text-white dark:text-white hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-semibold"
+            >
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#beranda" class="text-base text-dark py-2 mx-8 flex dark:text-white group-hover:text-main">Beranda</a>
+                  <a href="#beranda" class="text-dark py-2 mx-8 flex group-hover:text-main">Beranda</a>
                 </li>
                 <li class="group">
-                  <a href="#agenda" class="text-base text-dark py-2 mx-8 group-hover:text-main flex dark:text-white">Agenda</a>
+                  <a href="#agenda" class="text-dark py-2 mx-8 group-hover:text-main flex">Agenda</a>
                 </li>
                 <li class="group">
-                  <a href="#Galery" class="text-base text-dark py-2 mx-8 group-hover:text-main flex dark:text-white">Galery</a>
+                  <a href="#Galery" class="text-dark py-2 mx-8 group-hover:text-main flex">Galery</a>
                 </li>
                 <li class="group">
-                  <a href="#Tentang" class="text-base text-dark py-2 mx-8 group-hover:text-main flex dark:text-white">Tentang</a>
+                  <a href="#Tentang" class="text-dark py-2 mx-8 group-hover:text-main flex">Tentang</a>
                 </li>
 
                 <li class="group">
                   <!-- Bahasa -->
-                  <button type="button" id="language-dropdown-button" class="dark:text-white text-base text-dark cursor-pointer hover:text-main dark:hover:text-white flex items-center mt-1 text-dark rounded-xl lg:w-40 p-2 w-full h-10">
+                  <button
+                    type="button"
+                    id="language-dropdown-button"
+                    class="dark:text-white nav-menu3 dark:hover:text-main text-base text-dark cursor-pointer hover:text-main flex items-center mt-1 text-dark rounded-xl lg:w-40 p-2 w-full h-10"
+                  >
                     <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-id"></span>
                     Indonesia
-                    <i id="language-dropdown-select" class="ml-[100px] lg:ml-2 fa-solid fa-angle-down transition duration-300 ease-in-out"></i>
+                    <i id="language-dropdown-select" class="ml-[100px] lg:ml-2 fa-solid fa-angle-down transition-transform duration-300 ease-in-out"></i>
                   </button>
 
-                  <div id="language-dropdown-menu" class="hidden lg:absolute z-50 my-1 text-base list-none bg-white rounded-xl lg:w-40 divide-gray-100 dark:bg-gray-700 lg:shadow-xl">
+                  <div id="language-dropdown-menu" class="hidden lg:absolute z-50 my-1 text-base list-none bg-white rounded-xl lg:w-40 divide-gray-100 dark:bg-slate-900 lg:shadow-xl">
                     <ul class="py-1" role="none">
                       <li>
-                        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-white" role="menuitem">
+                        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-main dark:text-white" role="menuitem">
                           <div class="inline-flex items-center">
                             <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-id"></span>
                             indonesia
@@ -83,7 +90,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-white" role="menuitem">
+                        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-main dark:text-white" role="menuitem">
                           <div class="inline-flex items-center">
                             <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-gb"></span>
                             english
@@ -104,18 +111,35 @@
 
     <!-- ISII -->
 
-    <div class="mt-48 grid grid-cols-3 gap-3 md:grid-cols-5 sm:grid-cols-4 place-items-center mb-96">
-      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">1</div>
-      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">2</div>
-      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">3</div>
-      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">4</div>
-      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">5</div>
-      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">6</div>
-      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">7</div>
-      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">8</div>
-      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">9</div>
-      <div class="m-2 flex w-20 h-20 bg-main text-3xl items-center justify-center align-middle text-white rounded-lg">10</div>
+    <!-- Home -->
+
+    <div id="home" class="relative bg-main dark:bg-slate-900 mr-7 w-full">
+      <div class="flex flex-wrap pt-24 pb-44 mx-auto">
+        <div class="w-full mb-10 mt-10 px-20 pl-28 tracking-tight text-white">
+          <h1 class="font-bold text-6xl">LANGKAH AWAL</h1>
+          <h1 class="text-6xl">UNTUK MEMULAI</h1>
+          <h1 class="font-bold text-7xl">KEBAIKAN</h1>
+          <div class="mt-16 text-xl font-semibold">
+            <p class="">
+              mari salurkan <br />
+              kepedulian anda
+            </p>
+          </div>
+        </div>
+        <div id="gambar" class="absolute inset-y-0 right-0 w-[700px]">
+          <img src="/public/assets/img/hero.jpg" alt="" class="object-cover w-full h-full" />
+        </div>
+      </div>
+      <button
+        class="absolute right-44 bottom-32 bg-white px-6 py-2.5 text-main font-bold text-2xl leading-tight rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out"
+        type="button"
+      >
+        <p class="text- text-2xl">DONASI</p>
+      </button>
     </div>
+
+    <!-- Home Selesai -->
+
     <!-- Isi selesai -->
 
     <script src="dist/js/script.js"></script>
