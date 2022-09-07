@@ -12,7 +12,7 @@
     <link href="/node_modules/flag-icons/css/flag-icons.min.css" rel="stylesheet" />
     <script>
       if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark')  ;
+        document.documentElement.classList.add('dark');
       } else {
         document.documentElement.classList.remove('dark');
       }
@@ -20,11 +20,11 @@
   </head>
   <body class="font-sans dark:bg-slate-900 scroll-smooth">
     <!-- NavBar e ngabb -->
-    <header class="z-50 bg-transparent absolute top-0 left-0 w-full items-center transition duration-75 ease-in-out dark:shadow-white">
-      <div class="mx-16 px-2">
+    <header class="z-50 bg-transparent absolute w-full items-center transition duration-150 ease-in-out dark:shadow-white">
+      <div class="mx-2 lg:mx-16 px-2">
         <div class="flex items-center relative justify-between">
           <div class="px-4">
-            <a href="#home" class="nav-menu1 dark:text-white font-extrabold text-white text-2xl py-6 flex"><img src="assets/img/logo.png" width="30px" alt="Logo Web" class="mr-1.5" />WeCare</a>
+            <a href="#home" class="nav-menu1 dark:text-white font-extrabold text-white text-2xl py-2 flex"><img src="assets/img/logo.png" width="30px" alt="Logo Web" class="mr-1.5" />WeCare</a>
           </div>
 
           <button
@@ -51,7 +51,7 @@
 
             <nav
               id="nav-menu"
-              class="text-white dark:text-white hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-semibold"
+              class="text-dark dark:bg-slate-900 lg:text-white dark:text-white hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:dark:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-semibold"
             >
               <ul class="block lg:flex">
                 <li class="group">
@@ -72,7 +72,7 @@
                   <button
                     type="button"
                     id="language-dropdown-button"
-                    class="dark:text-white nav-menu3 dark:hover:text-main text-base text-dark cursor-pointer hover:text-main flex items-center mt-1 text-dark rounded-xl lg:w-40 p-2 w-full h-10"
+                    class="lg:dark:text-white nav-menu3 dark:hover:text-main text-base text-dark cursor-pointer hover:text-main flex items-center mt-1 text-dark rounded-xl lg:w-40 p-2 w-full h-10"
                   >
                     <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-id"></span>
                     Indonesia
@@ -114,24 +114,26 @@
     <!-- Home -->
 
     <div id="home" class="relative bg-main dark:bg-slate-900 mr-7 w-full">
-      <div class="flex flex-wrap pt-24 pb-44 mx-auto">
-        <div class="w-full mb-10 mt-10 px-20 pl-28 tracking-tight text-white">
-          <h1 class="font-bold text-6xl">LANGKAH AWAL</h1>
-          <h1 class="text-6xl">UNTUK MEMULAI</h1>
-          <h1 class="font-bold text-7xl">KEBAIKAN</h1>
-          <div class="mt-16 text-xl font-semibold">
+      <div class="flex">
+        <div class="z-40 grid grid-cols-9 content-center px-10 pt-32 2xl:pt-56 tracking-tight text-white">
+          <h1 class="font-bold text-3xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-4">LANGKAH AWAL</h1>
+          <h1 class="text-3xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-4">UNTUK MEMULAI</h1>
+          <h1 class="font-bold text-4xl md:text-6xl lg:text-7xl 2xl:text-9xl col-start-2 col-span-3">KEBAIKAN</h1>
+          <div class="mt-16 text-xl 2xl:text-3xl font-semibold col-start-2 col-span-5">
             <p class="">
               mari salurkan <br />
               kepedulian anda
             </p>
           </div>
         </div>
-        <div id="gambar" class="absolute inset-y-0 right-0 w-[700px]">
-          <img src="/public/assets/img/hero.jpg" alt="" class="object-cover w-full h-full" />
+        <div id="box" class="absolute lg:z-30 bg-main dark:bg-slate-900 h-screen w-1/2"></div>
+
+        <div id="gambar" class="z-10 -right-[6rem] brightness-50 lg:brightness-75 absolute lg:-right-[7rem] 2xl:-right-[5 rem] h-screen">
+          <img src="/public/assets/img/herojadi.jpg" alt="" class="object-cover w-full h-full" />
         </div>
       </div>
       <button
-        class="absolute right-44 bottom-32 bg-white px-6 py-2.5 text-main font-bold text-2xl leading-tight rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out"
+        class="z-40 absolute lg:right-44 lg:bottom-32 bg-white xl:px-6 xl:py-2.5 px-4 py-2 text-main font-bold text-2xl leading-tight rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out"
         type="button"
       >
         <p class="text- text-2xl">DONASI</p>

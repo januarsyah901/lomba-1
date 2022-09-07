@@ -4,7 +4,6 @@ window.onscroll = () => {
   const navMenu = document.querySelector('#nav-menu');
   const navMenu1 = document.querySelector('.nav-menu1');
   const navMenu2 = document.querySelector('.nav-menu2');
-  const navMenu3 = document.querySelector('.nav-menu3');
   const fixed = header.offsetTop;
 
   if (window.pageYOffset > fixed) {
@@ -26,6 +25,7 @@ const hamburger = document.querySelector('#hamburger');
 const languageButton = document.querySelector('#language-dropdown-button');
 const languageMenu = document.querySelector('#language-dropdown-menu');
 const languagedrop = document.querySelector('#language-dropdown-select');
+const navMenu = document.querySelector('#nav-menu');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('hamburger-active');
