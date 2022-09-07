@@ -2,22 +2,24 @@
 window.onscroll = () => {
   const header = document.querySelector('header');
   const navMenu = document.querySelector('#nav-menu');
+  const navMenuLus = document.querySelector('#nav-menu ul');
   const navMenu1 = document.querySelector('.nav-menu1');
   const navMenu2 = document.querySelector('.nav-menu2');
+
   const fixed = header.offsetTop;
 
   if (window.pageYOffset > fixed) {
     header.classList.add('navbar-fixed');
     navMenu.classList.add('text-black');
+    navMenuLus.classList.add('text-black');
     navMenu1.classList.add('text-black');
     navMenu2.classList.add('text-black');
- 
   } else {
     header.classList.remove('navbar-fixed');
     navMenu.classList.remove('text-black');
+    navMenuLus.classList.remove('text-black');
     navMenu1.classList.remove('text-black');
     navMenu2.classList.remove('text-black');
-
   }
 };
 

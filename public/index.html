@@ -21,10 +21,10 @@
   <body class="font-sans dark:bg-slate-900 scroll-smooth">
     <!-- NavBar e ngabb -->
     <header class="z-50 bg-transparent absolute w-full items-center transition duration-150 ease-in-out dark:shadow-white">
-      <div class="mx-2 lg:mx-16 px-2">
+      <div class="mx-4 2xl:mx-10 2xl:my-5 xl:my-2 px-2">
         <div class="flex items-center relative justify-between">
           <div class="px-4">
-            <a href="#home" class="nav-menu1 dark:text-white font-extrabold text-white text-2xl py-2 flex"><img src="assets/img/logo.png" width="30px" alt="Logo Web" class="mr-1.5" />WeCare</a>
+            <a href="#home" class="nav-menu1 dark:text-white font-extrabold text-white text-2xl py-2 flex"><img src="assets/img/logo.png" width="30px" alt="Logo Web" class="mr-1.5 2xl:text-3xl" />WeCare</a>
           </div>
 
           <button
@@ -51,9 +51,9 @@
 
             <nav
               id="nav-menu"
-              class="text-dark dark:bg-slate-900 lg:text-white dark:text-white hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:dark:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-semibold"
+              class="text-dark dark:bg-slate-900 lg:text-whitehidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:dark:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-semibold "
             >
-              <ul class="block lg:flex">
+              <ul class="block lg:flex 2xl:text-2xl  dark:text-white ">
                 <li class="group">
                   <a href="#beranda" class="text-dark py-2 mx-8 flex group-hover:text-main">Beranda</a>
                 </li>
@@ -72,7 +72,7 @@
                   <button
                     type="button"
                     id="language-dropdown-button"
-                    class="lg:dark:text-white nav-menu3 dark:hover:text-main text-base text-dark cursor-pointer hover:text-main flex items-center mt-1 text-dark rounded-xl lg:w-40 p-2 w-full h-10"
+                    class="lg:dark:text-white nav-menu3 dark:hover:text-main text-base text-dark cursor-pointer hover:text-main flex items-center mt-1 text-dark rounded-xl lg:w-40 p-2 w-full h-10 2xl:text-2xl"
                   >
                     <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-id"></span>
                     Indonesia
@@ -80,7 +80,7 @@
                   </button>
 
                   <div id="language-dropdown-menu" class="hidden lg:absolute z-50 my-1 text-base list-none bg-white rounded-xl lg:w-40 divide-gray-100 dark:bg-slate-900 lg:shadow-xl">
-                    <ul class="py-1" role="none">
+                    <ul class="py-1 2xl:text-2xl" role="none">
                       <li>
                         <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-main dark:text-white" role="menuitem">
                           <div class="inline-flex items-center">
@@ -113,34 +113,35 @@
 
     <!-- Home -->
 
-    <div id="home" class="relative bg-main dark:bg-slate-900 mr-7 w-full">
+    <div id="home" class="relative bg-main dark:bg-slate-900 w-full h-screen">
       <div class="flex">
-        <div class="z-40 grid grid-cols-9 content-center px-10 pt-32 2xl:pt-56 tracking-tight text-white">
-          <h1 class="font-bold text-3xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-4">LANGKAH AWAL</h1>
-          <h1 class="text-3xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-4">UNTUK MEMULAI</h1>
-          <h1 class="font-bold text-4xl md:text-6xl lg:text-7xl 2xl:text-9xl col-start-2 col-span-3">KEBAIKAN</h1>
-          <div class="mt-16 text-xl 2xl:text-3xl font-semibold col-start-2 col-span-5">
-            <p class="">
+        <div class="z-40 grid grid-cols-9 w-full h-screen content-center tracking-tight text-white">
+          <h1 class="mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
+            LANGKAH AWAL<br /><span class="font-thin">UNTUK MEMULAI <br /></span><span class="text-5xl">KEBAIKAN</span>
+            <p class="block mt-4 text-xl 2xl:text-3xl font-thin">
               mari salurkan <br />
               kepedulian anda
             </p>
+          </h1>
+          <div class="grid z-40 col-start-3 lg:col-start-8 grid-rows-2 justify-center">
+            <div class="row-start-2">
+              <button type="button" class="py-2 px-4 text-base font-bold text-center text-main bg-white rounded-full hover:bg-main hover:text-white">DONASI</button>
+            </div>
           </div>
         </div>
-        <div id="box" class="absolute lg:z-30 bg-main dark:bg-slate-900 h-screen w-1/2"></div>
+        <div id="box" class="absolute md:z-30 bg-main dark:bg-slate-900 h-screen w-1/2"></div>
 
-        <div id="gambar" class="z-10 -right-[6rem] brightness-50 lg:brightness-75 absolute lg:-right-[7rem] 2xl:-right-[5 rem] h-screen">
+        <div id="gambar" class="z-10 -right-[6rem] brightness-50 lg:brightness-75 absolute lg:-right-[14rem] 2xl:-right-[22rem] h-screen">
           <img src="/public/assets/img/herojadi.jpg" alt="" class="object-cover w-full h-full" />
         </div>
       </div>
-      <button
-        class="z-40 absolute lg:right-44 lg:bottom-32 bg-white xl:px-6 xl:py-2.5 px-4 py-2 text-main font-bold text-2xl leading-tight rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out"
-        type="button"
-      >
-        <p class="text- text-2xl">DONASI</p>
-      </button>
     </div>
 
     <!-- Home Selesai -->
+
+    <!-- Visi Misi -->
+    <div class="bg-main dark:bg-slate-900 w-full h-screen"></div>
+    <!-- Visi Misi Selesai -->
 
     <!-- Isi selesai -->
 
