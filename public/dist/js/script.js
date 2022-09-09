@@ -68,7 +68,7 @@ themeToggleBtn.addEventListener('click', function () {
       localStorage.setItem('color-theme', 'light');
     }
 
-    //
+    //Jika belum ada di local storage
   } else {
     if (document.documentElement.classList.contains('dark')) {
       document.documentElement.classList.remove('dark');
@@ -79,3 +79,6 @@ themeToggleBtn.addEventListener('click', function () {
     }
   }
 });
+
+
+// Language

@@ -23,8 +23,16 @@
   @apply -rotate-45;
 }
 
+
+
 .flag-active {
   @apply rotate-180;
+}
+.gradien{
+@apply   bg-gradient-to-r from-[#4f9ff5]  to-[#5ceffa];
+}
+.gradien2{
+@apply   bg-gradient-to-r from-[#4f9ff5] via-[#4f9ff5] to-[#5ceffa];
 }
 
 #box {
