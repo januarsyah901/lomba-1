@@ -11,10 +11,13 @@
     <link href="assets\fontawesome\css\solid.css" rel="stylesheet" />
     <link href="/node_modules/flag-icons/css/flag-icons.min.css" rel="stylesheet" />
     <script>
+  
       if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
+        // gradien[1].classList.remove('gradien');
       } else {
         document.documentElement.classList.remove('dark');
+        // gradien[1].classList.add('gradien');
       }
     </script>
   </head>
@@ -137,7 +140,7 @@
 
     <!-- Home -->
 
-    <div id="home" class="relative gradien dark:bg-neutral-900 w-full h-screen">
+    <div id="home" class="grad relative gradien dark:bg-neutral-900 w-full h-screen">
       <div class="flex">
         <div class="z-40 grid grid-cols-9 w-full h-screen content-center tracking-tight text-white">
           <h1 class="mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
@@ -165,7 +168,7 @@
     <!-- Home Selesai -->
 
     <!-- Visi Misi -->
-    <div class="gradien w-full h-full dark:bg-neutral-900">
+    <div class="gradien grad w-full h-full dark:bg-neutral-900">
       <div class="w-full h-[500px] flex justify-center items-center">
         <div class="w-[90%] h-[400px] flex justify-center items-center relative overflow-hidden">
           <img src="./assets/element/bundar.svg" alt="" class="absolute w-[100px] lg:w-[150px] -top-7 -left-4" />

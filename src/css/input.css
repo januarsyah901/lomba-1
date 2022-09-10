@@ -8,7 +8,7 @@
   }
   ,
   .gradien {
-    @apply bg-gradient-to-r from-[#4f9ff5]  to-[#5ceffa];
+     @apply bg-gradient-to-r from-[#4f9ff5]  to-[#5ceffa];
   }
 }
 
