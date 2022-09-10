@@ -18,7 +18,7 @@
       }
     </script>
   </head>
-  <body class="font-sans dark:bg-slate-900 scroll-smooth">
+  <body class="font-sans scroll-smooth dark:bg-neutral-900">
     <!-- NavBar e ngabb -->
     <header class="z-50 bg-transparent absolute w-full items-center transition duration-150 ease-in-out dark:shadow-white">
       <div class="mx-4 2xl:mx-10 2xl:my-5 xl:my-2 px-2">
@@ -30,7 +30,7 @@
           <button
             id="theme-toggle"
             type="button"
-            class="nav-menu2 text-white hover:bg-main dark:text-white dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 absolute lg:right-3 right-14"
+            class="nav-menu2 text-white hover:bg-main dark:text-white dark:hover:bg-neutral-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:bg-neutral-900 rounded-lg text-sm p-2.5 absolute lg:right-3 right-14"
           >
             <svg id="theme-toggle-dark-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
             <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@
 
             <nav
               id="nav-menu"
-              class="dark:bg-slate-900 lg:text-white hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:dark:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-semibold"
+              class="dark:bg-neutral-900 lg:text-white hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:dark:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-semibold"
             >
               <ul class="block lg:flex 2xl:text-2xl dark:text-white">
                 <li class="group">
@@ -79,7 +79,7 @@
                     <i id="language-dropdown-select" class="ml-[100px] lg:ml-2 fa-solid fa-angle-down transition-transform duration-300 ease-in-out"></i>
                   </button>
 
-                  <div id="language-dropdown-menu" class="hidden lg:absolute z-50 my-1 text-base list-none bg-white rounded-xl lg:w-40 divide-gray-100 dark:bg-slate-900 lg:shadow-xl">
+                  <div id="language-dropdown-menu" class="hidden lg:absolute z-50 my-1 text-base list-none bg-white rounded-xl lg:w-40 divide-gray-100 dark:bg-neutral-900 lg:shadow-xl">
                     <ul class="py-1 2xl:text-2xl" role="none">
                       <li>
                         <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-main dark:text-white" role="menuitem">
@@ -137,7 +137,7 @@
 
     <!-- Home -->
 
-    <div id="home" class="relative bg-main dark:bg-slate-900 w-full h-screen">
+    <div id="home" class="relative gradien dark:bg-neutral-900 w-full h-screen">
       <div class="flex">
         <div class="z-40 grid grid-cols-9 w-full h-screen content-center tracking-tight text-white">
           <h1 class="mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
@@ -153,44 +153,73 @@
             </div>
           </div>
         </div>
-        <div id="box" class="absolute md:z-30 bg-main dark:bg-slate-900 h-screen w-1/2"></div>
-
-        <div id="gambar" class="z-10 -right-[6rem] brightness-50 lg:brightness-75 absolute lg:-right-[14rem] 2xl:-right-[22rem] h-screen">
-          <img src="/public/assets/img/herojadi.jpg" alt="" class="object-cover w-full h-full" />
+        <!-- <div id="box" class="absolute md:z-30 bg-main dark:bg-slate-900 h-screen w-1/2"></div> -->
+        <div id="gambar" class="z-10 brightness-50 lg:brightness-75 absolute right-0 md:path1 h-screen md:w-2/3">
+          <img src="/public/assets/img/herojadi.jpg" alt="" class="object-cover object-center w-full h-full" />
         </div>
+        <!-- <div id="gambar" class="z-10 -right-[6rem] brightness-50 lg:brightness-75 absolute lg:-right-[14rem] 2xl:-right-[22rem] h-screen ">
+          <img src="/public/assets/img/herojadi.jpg" alt="" class="object-cover w-full h-full" />
+        </div> -->
       </div>
     </div>
     <!-- Home Selesai -->
 
     <!-- Visi Misi -->
-    <div class="gradien w-full h-full dark:bg-slate-900">
-      <div class="w-full h-[300px] flex justify-center items-center">
-        <!-- <img src="./assets/element/bundar.svg" alt="">
-        <img src="./assets/element/bundar 2.svg" alt="">
-        <img src="./assets/element/bundar3.svg" alt=""> -->
-        <div class="flex text-left tracking-tight text-lg text-white font-semibold antialiased w-[80%] m-5">
+    <div class="gradien w-full h-full dark:bg-neutral-900">
+      <div class="w-full h-[500px] flex justify-center items-center">
+        <div class="w-[90%] h-[400px] flex justify-center items-center relative overflow-hidden">
+          <img src="./assets/element/bundar.svg" alt="" class="absolute w-[100px] lg:w-[150px] -top-7 -left-4" />
+          <img src="./assets/element/bundar 2.svg" alt="" class="absolute w-[100px] lg:w-[150px] bottom-2 right-0" />
 
-          sebuah organisasi muda yang siap untuk membangkitkan kesejahteraan masyarakat indonesia dengan menyatukan kepedulian bersama dan menuangkannya kepada yang membutuhkan.
+          <img src="./assets/element/garis tuipispipis2.svg" alt="" class="h-[200px] mr-3 w-0.5 md:h-[150px] md:w-[3px] lg:w-1 bg-white rounded-full" />
+          <div class="flex text-left text-lg md:text-2xl 2xl:text-4xl text-white font-medium antialiased w-[80%] md:w-[85%] lg:w-[90%] 2xl:w-[96%]">
+            <p><span class="text-xl md:text-3xl 2xl:text-6xl">Sebuah</span> organisasi muda yang siap untuk membangkitkan kesejahteraan masyarakat indonesia dengan menyatukan kepedulian bersama dan menuangkannya kepada yang membutuhkan.</p>
+          </div>
         </div>
       </div>
-      <div class="w-full h-[1400px] ">
-       
-        <div class="z-50 mx-5 lg:mx-10 grid lg:grid-cols-2 gap-6 grid-rows-2 absolute justify-center tracking-tight text-lg text-white font-semibold antialiased">
-          <div class="row-start-1 col-start-1 mx-5 my-5">
-            <span class="text-6xl">Visi</span><br />
-            <p class="indent-5">" Mewujudkan kesejahteraan bagi masyarakat Indonesia yang merupakan cita-cita luhur kemerdekaan. Menjadikan semua merasakan sila kedua, yaitu kemanusiaan yang adil dan beradab bersama. "</p>
+      <div class="w-full h-screen lg:h-[800px]">
+        <div class="flex w-full h-full items-center justify-center">
+          <div class="w-[80%] z-50 grid grid-cols-1 lg:grid-cols-2 gap-6 grid-rows-2 lg:grid-rows-1 absolute text-white text-xl md:text-2xl 2xl:text-4xl font-medium antialiased">
+            <div class="row-start-1 col-start-1 mx-5 my-5">
+              <span class="text-6xl mb-3">Visi</span>
+              <p class="indent-5">" Mewujudkan kesejahteraan bagi masyarakat Indonesia yang merupakan cita-cita luhur kemerdekaan. Menjadikan semua merasakan sila kedua, yaitu kemanusiaan yang adil dan beradab bersama. "</p>
+            </div>
+            <div class="lg:col-start-2 lg:row-start-1 row-start-2 col-start-1 mx-5 my-5">
+              <span class="text-6xl mb-3">Misi</span>
+              <p class="indent-5">“ menyumbangkan kepedulian kita berupa, pakaian layak pakai, sembako, dan juga dana untuk membeli air besih bagi mereka yang membutuhkan dan kebutuhan lainnya.”</p>
+            </div>
           </div>
-          <div class="lg:col-start-2 lg:row-start-1 row-start-2 col-start-1 mx-5 my-5">
-            <span class="text-6xl">Misi</span><br />
-            <p class="indent-5">“ menyumbangkan kepedulian kita berupa, pakaian layak pakai, sembako, dan juga dana untuk membeli air besih bagi mereka yang membutuhkan dan kebutuhan lainnya.”</p>
-          </div>
+          <img src="./assets/img/blur.png" alt="" class="z-40 object-center object-cover h-full w-full" />
         </div>
-        <img src="./assets/img/blur.png" alt="" class="top-0 object-center object-none h-full" />
       </div>
     </div>
     <!-- Visi Misi Selesai -->
 
+    <img src="/public/assets/img/dedlen.jpg" alt="" class="w-full" />
     <!-- Isi selesai -->
+
+    <!-- Footer -->
+
+    <footer class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-neutral-900 mt-52 shadow-white">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="" class="flex items-center mb-4 sm:mb-0">
+          <img src="./assets/img/logo.png" class="mr-3 w-8" alt="" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">WeCare</span>
+        </a>
+        <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Tentang</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Hubungi kami</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">WeCare™</a>. All Rights Reserved. </span>
+    </footer>
+
+    <!-- Footer Selesai -->
 
     <script src="dist/js/script.js"></script>
   </body>

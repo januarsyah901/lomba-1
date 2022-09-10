@@ -2,13 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .path1 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 100%);
+  }
+  ,
+  .gradien {
+    @apply bg-gradient-to-r from-[#4f9ff5]  to-[#5ceffa];
+  }
+}
+
 .hamburger-line {
   @apply w-7 h-[2px] my-2 block;
   background-color: black;
 }
 
 .navbar-fixed {
-  @apply fixed z-[10000] bg-white bg-opacity-80  dark:bg-slate-900 dark:bg-opacity-80;
+  @apply fixed z-[10000] bg-white bg-opacity-80  dark:bg-neutral-900 dark:bg-opacity-80;
   backdrop-filter: blur(5px);
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
@@ -23,18 +33,9 @@
   @apply -rotate-45;
 }
 
-
-
 .flag-active {
   @apply rotate-180;
 }
-.gradien{
-@apply   bg-gradient-to-r from-[#4f9ff5]  to-[#5ceffa];
-}
-.gradien2{
-@apply   bg-gradient-to-r from-[#4f9ff5] via-[#4f9ff5] to-[#5ceffa];
-}
-
-#box {
-  clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
+.gradien {
+  @apply bg-gradient-to-r from-[#4f9ff5]  to-[#5ceffa];
 }
