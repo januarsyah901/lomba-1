@@ -65,11 +65,17 @@ themeToggleBtn.addEventListener('click', function () {
     if (localStorage.getItem('color-theme') === 'light') {
       document.documentElement.classList.add('dark');
       localStorage.setItem('color-theme', 'dark');
-      gradien[1].classList.remove('gradien');
+      // gradien[0].classList.remove('gradien');
+      gradien.forEach((element) => {
+        element.classList.remove('gradien');
+      });
     } else {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('color-theme', 'light');
-      gradien[1].classList.add('gradien');
+      // gradien[0].classList.add('gradien');
+      gradien.forEach((element) => {
+        element.classList.add('gradien');
+      });
     }
 
     //Jika belum ada di local storage
@@ -77,16 +83,19 @@ themeToggleBtn.addEventListener('click', function () {
     if (document.documentElement.classList.contains('dark')) {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('color-theme', 'light');
-      gradien[1].classList.add('gradien');
+      // gradien[0].classList.add('gradien');
+      gradien.forEach((element) => {
+        element.classList.add('gradien');
+      });
     } else {
       document.documentElement.classList.add('dark');
       localStorage.setItem('color-theme', 'dark');
-      gradien[1].classList.remove('gradien');
+      // gradien[0].classList.remove('gradien');
+      gradien.forEach((element) => {
+        element.classList.remove('gradien');
+      });
     }
   }
 });
-
-
-
 
 // Language
