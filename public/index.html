@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,8 +11,21 @@
     <link href="assets\fontawesome\css\solid.css" rel="stylesheet" />
     <link href="/node_modules/flag-icons/css/flag-icons.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+        // gradien[1].classList.remove('gradien');
+      } else {
+        document.documentElement.classList.remove('dark');
+        // gradien[1].classList.add('gradien');
+      }
+    </script>
   </head>
-  <body class="font-sans scroll-smooth dark:bg-neutral-900">
+  <body class="didact scroll-smooth dark:bg-neutral-900">
     <!-- NavBar e ngabb -->
     <header class="z-50 bg-transparent absolute w-full items-center transition duration-150 ease-in-out dark:shadow-white">
       <div class="mx-4 2xl:mx-10 2xl:my-5 xl:my-2 px-2">
@@ -52,13 +65,16 @@
                   <a href="#beranda" class="text-dark py-2 mx-8 flex group-hover:text-main">Beranda</a>
                 </li>
                 <li class="group">
+                  <a href="#visiMisi" class="text-dark py-2 mx-8 flex group-hover:text-main">Visi Misi</a>
+                </li>
+                <li class="group">
                   <a href="#agenda" class="text-dark py-2 mx-8 group-hover:text-main flex">Agenda</a>
                 </li>
                 <li class="group">
-                  <a href="#Galery" class="text-dark py-2 mx-8 group-hover:text-main flex">Galery</a>
+                  <a href="#profil" class="text-dark py-2 mx-8 group-hover:text-main flex">Profil</a>
                 </li>
                 <li class="group">
-                  <a href="#Tentang" class="text-dark py-2 mx-8 group-hover:text-main flex">Tentang</a>
+                  <a href="#galeri" class="text-dark py-2 mx-8 group-hover:text-main flex">Galeri</a>
                 </li>
 
                 <li class="group">
@@ -130,7 +146,7 @@
     <!-- ISII -->
     <!-- Home -->
 
-    <div id="home" class="grad relative gradien dark:bg-neutral-900 w-full h-screen">
+    <div id="beranda" class="grad relative gradien dark:bg-neutral-900 w-full h-screen">
       <div class="flex">
         <div class="pembukaan1 z-40 grid grid-cols-9 w-full h-screen content-center tracking-tight text-white">
           <h1 class="mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
@@ -146,38 +162,37 @@
             </div>
           </div>
         </div>
-        <!-- <div id="box" class="absolute md:z-30 bg-main dark:bg-slate-900 h-screen w-1/2"></div> -->
-        <div id="gambar" class="z-10 brightness-50 lg:brightness-75 absolute right-0 md:path1 h-screen md:w-2/3">
+
+        <div id="gambar" class="z-10 brightness-50 lg:brightness-50 absolute right-0 md:path1 h-screen md:w-2/3">
           <img src="/public/assets/img/herojadi.jpg" alt="" class="object-cover object-center w-full h-full" />
         </div>
-        <!-- <div id="gambar" class="z-10 -right-[6rem] brightness-50 lg:brightness-75 absolute lg:-right-[14rem] 2xl:-right-[22rem] h-screen ">
-          <img src="/public/assets/img/herojadi.jpg" alt="" class="object-cover w-full h-full" />
-        </div> -->
+
       </div>
     </div>
     <!-- Home Selesai -->
 
     <!-- Visi Misi -->
-    <div class="gradien grad w-full h-full dark:bg-neutral-900">
-      <div class="w-full h-[500px] flex justify-center items-center">
-        <div class="w-[90%] h-[400px] flex justify-center items-center relative overflow-hidden">
+    <div id="visiMisi" class="gradien grad w-full h-auto dark:bg-neutral-900">
+      <div class="w-full h-[800px] flex justify-center items-center">
+        <div class="w-[90%] h-[50%] flex justify-center items-center relative overflow-hidden">
           <img src="./assets/element/bundar.svg" alt="" class="absolute w-[100px] lg:w-[150px] -top-7 -left-4" />
           <img src="./assets/element/bundar 2.svg" alt="" class="absolute w-[100px] lg:w-[150px] bottom-2 right-0" />
-
-          <img src="./assets/element/garis tuipispipis2.svg" alt="" class="h-[200px] mr-3 w-0.5 md:h-[150px] md:w-[3px] lg:w-1 bg-white rounded-full" />
-          <div class="pembukaan flex text-left text-lg md:text-2xl 2xl:text-4xl text-white font-medium antialiased w-[80%] md:w-[85%] lg:w-[90%] 2xl:w-[96%]">
-            <p><span class=" text-xl md:text-3xl 2xl:text-6xl">INDONESIA</span> organisasi muda yang siap untuk membangkitkan kesejahteraan masyarakat indonesia dengan menyatukan kepedulian bersama dan menuangkannya kepada yang membutuhkan.</p>
+          <img  data-aos="fade-up" data-aos-duration="1000" src="./assets/element/garis tuipispipis2.svg" alt="" class="h-[200px] mr-3 w-0.5 md:h-[150px] md:w-[3px] lg:w-1 bg-white rounded-full" />
+          <div data-aos="fade-right" data-aos-duration="800" class="pembukaan flex text-left text-xl md:text-2xl 2xl:text-4xl text-white font-medium antialiased w-[80%] md:w-[85%] lg:w-[90%] 2xl:w-[96%]">
+            <p>
+              <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Sebuah</span> organisasi muda yang siap untuk membangkitkan kesejahteraan masyarakat indonesia dengan menyatukan kepedulian bersama dan menuangkannya kepada yang membutuhkan.
+            </p>
           </div>
         </div>
       </div>
       <div class="w-full h-screen lg:h-[800px]">
         <div class="flex w-full h-full items-center justify-center">
           <div class="w-[80%] z-50 grid grid-cols-1 lg:grid-cols-2 gap-6 grid-rows-2 lg:grid-rows-1 absolute text-white text-xl md:text-2xl 2xl:text-4xl font-medium antialiased">
-            <div class="row-start-1 col-start-1 mx-5 my-5">
+            <div  data-aos="fade-right"  data-aos-duration="1000" class="row-start-1 col-start-1 mx-5 my-5">
               <span class="text-6xl mb-3">Visi</span>
               <p class="indent-5">" Mewujudkan kesejahteraan bagi masyarakat Indonesia yang merupakan cita-cita luhur kemerdekaan. Menjadikan semua merasakan sila kedua, yaitu kemanusiaan yang adil dan beradab bersama. "</p>
             </div>
-            <div class="lg:col-start-2 lg:row-start-1 row-start-2 col-start-1 mx-5 my-5">
+            <div  data-aos="fade-left"   data-aos-duration="1000" class="lg:col-start-2 lg:row-start-1 row-start-2 col-start-1 mx-5 my-5">
               <span class="text-6xl mb-3">Misi</span>
               <p class="indent-5">“ menyumbangkan kepedulian kita berupa, pakaian layak pakai, sembako, dan juga dana untuk membeli air besih bagi mereka yang membutuhkan dan kebutuhan lainnya.”</p>
             </div>
@@ -188,7 +203,153 @@
     </div>
     <!-- Visi Misi Selesai -->
 
-    <img src="/public/assets/img/dedlen.jpg" alt="" class="w-full" />
+    <!-- Timeline -->
+    <div id="agenda" class="w-full h-[3000px] flex items-center justify-center gradien overflow-hidden relative grad gradien">
+      <img src="./assets/element/agenda judul.svg" alt="" class="absolute  w-[70%] lg:w-[50%] xl:w-[40%] 2xl:w-[30%] top-[30rem] lg:top-[15rem] xl:top-[2rem] z-10">
+      <img src="./assets/element/agenda.svg" alt="Agenda" class="absolute -left-8 bottom-[88rem] w-[80%] lg:w-[60%] xl:w-[50%] 2xl:w-[40%]" />
+      <img src="./assets/element/agenda.svg" alt="Agenda" class="absolute -right-8 top-[40rem] xl:top-[30rem] w-[80%] lg:[60%] xl:w-[50%] 2xl:w-[40%]" />
+      <div class="absolute bg-white w-[1000px] h-[1000px] -rotate-[65deg] top-[22rem] lg:top-[6rem] 2xl:top-[5rem] -left-[64rem] lg:-left-[60rem] 2xl:-left-[55rem] z-10"></div>
+      <div class="w-[1000px] h-[1000px] bg-white absolute -rotate-[65deg] bottom-[35rem] -right-[54rem] lg:-right-[60rem] 2xl:-left-[55rem]"></div>
+      
+      <div class="w-[80%] z-30">
+        <div class="flex flex-col md:grid grid-cols-9 p-2 text-blue-50">
+          <!-- left -->
+          <div class="flex flex-row-reverse md:contents">
+            <div class="relative bg-blue-800 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md h-[210px] lg:h-[275px] xl:h-[325px] 2xl:h-[400px] w-[100%]">
+              
+              <img src="./assets/element/bundur.svg" alt="" class="w-[50%] absolute z-40 -bottom-16 left-0
+              ">
+            </div>
+            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div class="h-full w-10 flex items-center justify-center">
+                <div class="h-full w-full bg-[#42c2ff] pointer-events-none rounded-t-full border-t-4 border-r-4 border-l-4 border-white"></div>
+                <div class="w-9 h-9 absolute top-1/2 -mt-3 rounded-full bg-transparent border-4 border-white shadow mx-auto"></div>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="flex md:contents">
+            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div class="h-full w-10 flex items-center justify-center">
+                <div class="h-full w-full bg-[#42c2ff] pointer-events-none border-r-4 border-l-4 border-white"></div>
+                <div class="w-9 h-9 absolute top-1/2 -mt-3 rounded-full bg-transparent border-4 border-white shadow mx-auto"></div>
+              </div>
+            </div>
+            <div class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto ml-auto shadow-md h-[210px] lg:h-[275px] xl:h-[325px] 2xl:h-[400px] w-[100%] relative">
+               <img src="./assets/element/bundur2.svg" alt="" class="w-[40%] absolute z-40 bottom-0 -right-16"/>
+            </div>
+          </div>
+          <!-- left -->
+          <div class="flex flex-row-reverse md:contents">
+            <div class="relative bg-blue-800 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md h-[210px] lg:h-[275px] xl:h-[325px] 2xl:h-[400px] w-[100%] ">
+              <img src="./assets/element/bundur3.svg" alt="" class="w-[50%] absolute -bottom-24 -right-20"/>
+            </div>
+            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div class="h-full w-10 flex items-center justify-center">
+                <div class="h-full w-full bg-[#42c2ff] pointer-events-none border-r-4 border-l-4 border-white"></div>
+                <div class="w-9 h-9 absolute top-1/2 -mt-3 rounded-full bg-transparent border-4 border-white shadow mx-auto"></div>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="flex md:contents">
+            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div class="h-full w-10 flex items-center justify-center">
+                <div class="h-full w-full bg-[#42c2ff] pointer-events-none border-r-4 border-l-4 border-white"></div>
+                <div class="w-9 h-9 absolute top-1/2 -mt-3 rounded-full bg-transparent border-4 border-white shadow mx-auto"></div>
+              </div>
+            </div>
+            <div class="relative bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto ml-auto shadow-md h-[210px] lg:h-[275px] xl:h-[325px] 2xl:h-[400px] w-[100%]">
+              <img src="./assets/element/bundur4.svg" alt="" class="w-[40%] absolute -top-16 -right-10"/>
+            </div>
+          </div>
+          <!-- left -->
+          <div class="flex flex-row-reverse md:contents">
+            <div class="relative bg-blue-800 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md h-[210px] lg:h-[275px] xl:h-[325px] 2xl:h-[400px] w-[100%]">
+              <img src="./assets/element/bundur5.svg" alt="" class="w-[40%] absolute -bottom-16 left-7"/>
+            </div>
+            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div class="h-full w-10 flex items-center justify-center">
+                <div class="h-full w-full bg-[#42c2ff] pointer-events-none border-r-4 border-l-4 border-white"></div>
+                <div class="w-9 h-9 absolute top-1/2 -mt-3 rounded-full bg-transparent border-4 border-white shadow mx-auto"></div>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="flex md:contents">
+            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div class="h-full w-10 flex items-center justify-center">
+                <div class="h-full w-full bg-[#42c2ff] pointer-events-none rounded-b-full border-r-4 border-b-4 border-l-4 border-white"></div>
+                <div class="w-9 h-9 absolute top-1/2 -mt-3 rounded-full bg-transparent border-4 border-white shadow mx-auto"></div>
+              </div>
+            </div>
+            <div class="relative bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto ml-auto shadow-md h-[210px] lg:h-[275px] xl:h-[325px] 2xl:h-[400px] w-[100%]">
+              <img src="./assets/element/bundur6.svg" alt="" class="w-[40%] absolute -bottom-20 -right-24 rotate-90"/>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    <!-- Timeline selesai -->
+
+    <!-- Profil -->
+    <div id="profil" class="w-full h-[3500px] grad gradien dark:bg-neutral-900 overflow-hidden">
+      <div class="flex w-full h-full justify-center items-center">
+        <div class="w-[90%] h-[80%] grid grid-rows-3  relative">
+          <img src="./assets/element/garis pinggirrr.svg" alt="" class="absolute top-4 left-0 w-[150px] lg:w-[180px]">
+          <div class="absolute -top-8 left-0  text-4xl font-light text-white ">Tentang</div>
+          <img src="./assets/element/bundur5.svg" alt="" class="absolute w-[150px] lg:w-[180px] -top-32 -left-16">
+          <img src="./assets/element/garis pinggirrr.svg" alt="" class="absolute rotate-180  right-0 -bottom-16 w-[150px] lg:w-[180px]">
+          <div class="grid grid-cols-1 lg:grid-cols-2 row-start-1 lg:grid-rows-1 grid-rows-2 ">
+            <div class="grid cols-start-1 row-start-2 lg:cols-start-2 lg:row-start-1  self-start justify-self-center lg:justify-self-end lg:self-center">
+              <img src="./assets/img/fat.svg" alt="M.Fatih Al Fawwaz" class="w-[400px] xl:w-[550px] 2xl:w-[750px] block justify-self-center self-end lg:self-center" />
+              <h2 class="font-thin text-3xl text-white italic mt-2 flex justify-self-center">Tes 123 Bumi Datar</h2>
+            </div>
+            <div class="grid cols-start-1 lg:cols-start-2 rows-start-1 lg:rows-start-1 self-end justify-self-center lg:justify-self-start lg:self-center">
+                <img src="./assets/img/fatih.png" alt="Fatih" class="w-[300px] xl:w-[400px] 2xl:w-[600px] justify-self-center lg:justify-self-start self-end lg:self-center object-cover object-center" />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 row-start-2 lg:grid-rows-1 grid-rows-2">
+            <div class="grid cols-start-1 row-start-1 lg:cols-start-2 lg:row-start self-end justify-self-center lg:justify-self-end lg:self-center">           
+              <img src="./assets/img/sabr.png" alt="sabra" class="w-[450px] xl:w-[550px] 2xl:w-[650px] object-cover object-center  justify-self-center lg:justify-self-end self-end lg:self-center" />            
+            </div>
+            <div class="grid cols-start-1 lg:cols-start-2 rows-start-2 lg:rows-start-1 self-start justify-self-center lg:justify-self-start lg:self-center">
+              <img src="./assets/img/sab.svg" alt="Sabra Sahasika" class="w-[490px] xl:w-[570px] 2xl:w-[700px] block justify-self-center lg:justify-self-start self-start lg:self-center mb-10" />
+            </div>
+          </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 row-start-3 grid-rows-2 lg:grid-rows-1">
+              <div class="grid cols-start-1 row-start-2 lg:cols-start-2 lg:row-start-1  self-start justify-self-center lg:justify-self-end lg:self-center">
+                <img src="./assets/img/janu.svg" alt="Januarsyah Akbar" class="w-[400px] xl:w-[580px] 2xl:w-[700px] block justify-self-center self-end lg:self-center mb-10" />
+              </div>
+              <div class="grid cols-start-1 lg:cols-start-2 rows-start-1 lg:rows-start-1 self-end justify-self-center lg:justify-self-start lg:self-center">
+                  <img src="./assets/img/janu.png" alt="Janu" class="w-[400px] xl:w-[500px] 2xl:w-[600px] h-auto justify-self-center lg:justify-self-start self-end lg:self-center object-cover object-center" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Profil Selesai -->
+
+    <!-- Galeri -->
+    <div id="galeri" class="w-full grad gradien h-[2000px] items-center flex justify-center">
+      <div class="grid grid-rows-2 w-[80%] h-[90%]">
+        <div class="row-start-1 grid grid-rows-3 lg:grid-rows-2 grid-cols-1 lg:grid-cols-2">
+          <div class="bg-red-500 w-[80%] h-[80%] row-start-1 col-start-1 justify-self-center m-5">1</div>
+          <div class="bg-blue-500 w-[80%] h-[80%] row-start-3 col-start-1 lg:row-start-2 justify-self-center m-5">2</div>
+          <div class="bg-yellow-500 w-[80%] h-[90%] row-start-2 lg:row-start-1 lg:row-end-2 col-start-1 lg:col-start-2 self-end justify-self-center m-5">3</div>
+        </div>
+        <div class="row-start-2 grid grid-rows-3 lg:grid-rows-2 grid-cols-1 lg:grid-cols-2 mt-7">
+          <div class="bg-red-500 w-[80%] h-[80%] row-start-1 col-start-1 lg:col-start-2 justify-self-center m-5">4</div>
+          <div class="bg-blue-500 w-[80%] h-[80%] row-start-3 col-start-1 lg:col-start-2 lg:row-start-2 justify-self-center m-5">5</div>
+          <div class="bg-yellow-500 w-[80%] h-[90%] row-start-2 lg:row-start-1 lg:row-end-2 col-start-1 self-end justify-self-center m-5">6</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Galeri Selesai -->
+
     <!-- Isi selesai -->
 
     <!-- Footer -->
@@ -213,7 +374,10 @@
     </footer>
 
     <!-- Footer Selesai -->
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="dist/js/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
