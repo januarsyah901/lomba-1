@@ -90,3 +90,69 @@ themeToggleBtn.addEventListener('click', function () {
 
 
 // Language
+
+if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+  document.documentElement.classList.add("dark");
+  // gradien[1].classList.remove('gradien');
+} else {
+  document.documentElement.classList.remove("dark");
+  // gradien[1].classList.add('gradien');
+}
+$(document).ready(function () {
+
+  $("#indonesia").click(function () {
+    $(".bahasa").text("Indonesia");
+    $(".pembukaan1").html(`
+    <div class="z-40 grid grid-cols-9 w-full h-screen content-center tracking-tight text-white">
+      <h1 class="mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
+        LANGKAH AWAL<br /><span class="font-thin">UNTUK MEMULAI <br /></span><span class="text-5xl">KEBAIKAN</span>
+        <p class="block mt-4 text-xl 2xl:text-3xl font-thin">
+          mari salurkan <br />
+          kepedulian anda
+        </p>
+      </h1>
+      <div class="grid z-40 col-start-3 lg:col-start-8 grid-rows-2 justify-center">
+        <div class="row-start-2">
+          <button type="button" class="py-2 px-4 text-base font-bold text-center text-main bg-white rounded-full hover:bg-main hover:text-white">DONASI</button>
+        </div>
+      </div>
+    </div>`);
+    $(".pembukaan2").html(`<div class="pembukaan2 flex text-left text-lg md:text-2xl 2xl:text-4xl text-white font-medium antialiased w-[80%] md:w-[85%] lg:w-[90%] 2xl:w-[96%]">
+    <p><span class=" text-xl md:text-3xl 2xl:text-6xl">INDONESIA</span> organisasi muda yang siap untuk membangkitkan kesejahteraan masyarakat indonesia dengan menyatukan kepedulian bersama dan menuangkannya kepada yang membutuhkan.</p>
+  </div>`);
+  $(".visimisi").html();
+  });
+  $("#jawa").click(function () {
+    $(".bahasa").text("Jawa");
+    $(".pembukaan1").html();
+    $(".pembukaan2").html(`<div class="pembukaan2 flex text-left text-lg md:text-2xl 2xl:text-4xl text-white font-medium antialiased w-[80%] md:w-[85%] lg:w-[90%] 2xl:w-[96%]">
+    <p><span class=" text-xl md:text-3xl 2xl:text-6xl">JAWA</span> organisasi enom seng cepak gae nukulno kesejahteraan wong wong indonesia karo nyatokake pengerten sedoyo lan ditublek ake marang wong seng butuh.</p>
+  </div>`);
+  $(".visimisi").html();
+  });
+  $("#sunda").click(function () {
+    $(".bahasa").text("Sunda");
+    $(".pembukaan1").html();
+    $(".pembukaan2").html(`<div class="pembukaan2 flex text-left text-lg md:text-2xl 2xl:text-4xl text-white font-medium antialiased w-[80%] md:w-[85%] lg:w-[90%] 2xl:w-[96%]">
+    <p><span class=" text-xl md:text-3xl 2xl:text-6xl">SUNDA</span> organisasi muda nu siap untuk hayong alim nuju naon ayena, ayena saha nu bagean piket tabuh sabaraha atu.</p>
+  </div>`);
+  $(".visimisi").html();
+  });
+  $("#english").click(function () {
+    $(".bahasa").text("English");
+    $(".pembukaan1").html();
+    $(".pembukaan2").html(`<div class="pembukaan2 flex text-left text-lg md:text-2xl 2xl:text-4xl text-white font-medium antialiased w-[80%] md:w-[85%] lg:w-[90%] 2xl:w-[96%]">
+    <p><span class=" text-xl md:text-3xl 2xl:text-6xl">English</span> what the florr, me will kill a some thing with my girl friendds and u wll love someone when i saw you bhind.</p>
+  </div>`);
+  $(".visimisi").html();
+  });
+  $("#madura").click(function () {
+    $(".bahasa").text("Madura");
+    $(".pembukaan1").html();
+    $(".pembukaan2").html(`<div class="pembukaan2 flex text-left text-lg md:text-2xl 2xl:text-4xl text-white font-medium antialiased w-[80%] md:w-[85%] lg:w-[90%] 2xl:w-[96%]">
+    <p><span class=" text-xl md:text-3xl 2xl:text-6xl">Madura</span> carok tokar cong been ganteng, sampe an meta medunten ngajak gelot, ancene raine koyok ngunu, mengundan pukulan.</p>
+  </div>`);
+  $(".visimisi").html();
+  });
+  
+});

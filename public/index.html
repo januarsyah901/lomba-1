@@ -10,16 +10,7 @@
     <link href="assets\fontawesome\css\brands.css" rel="stylesheet" />
     <link href="assets\fontawesome\css\solid.css" rel="stylesheet" />
     <link href="/node_modules/flag-icons/css/flag-icons.min.css" rel="stylesheet" />
-    <script>
-  
-      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-        // gradien[1].classList.remove('gradien');
-      } else {
-        document.documentElement.classList.remove('dark');
-        // gradien[1].classList.add('gradien');
-      }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body class="font-sans scroll-smooth dark:bg-neutral-900">
     <!-- NavBar e ngabb -->
@@ -78,7 +69,7 @@
                     class="lg:dark:text-white nav-menu3 dark:hover:text-main text-base text-dark cursor-pointer hover:text-main flex items-center mt-1 text-dark rounded-xl lg:w-40 p-2 w-full h-10 2xl:text-2xl"
                   >
                     <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-id"></span>
-                    Indonesia
+                    <section class="bahasa">Indonesia</section>
                     <i id="language-dropdown-select" class="ml-[100px] lg:ml-2 fa-solid fa-angle-down transition-transform duration-300 ease-in-out"></i>
                   </button>
 
@@ -93,7 +84,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-main dark:text-white" role="menuitem">
+                        <a href="#" id="english" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-main dark:text-white" role="menuitem">
                           <div class="inline-flex items-center">
                             <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-gb"></span>
                             english
@@ -101,7 +92,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-main dark:text-white" role="menuitem">
+                        <a href="#" id="jawa" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-main dark:text-white" role="menuitem">
                           <div class="inline-flex items-center">
                             <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-gb"></span>
                             Jawa
@@ -109,15 +100,15 @@
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-main dark:text-white" role="menuitem">
+                        <a href="#" id="sunda" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-main dark:text-white" role="menuitem">
                           <div class="inline-flex items-center">
                             <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-gb"></span>
-                            Aceh
+                            Sunda
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-main dark:text-white" role="menuitem">
+                        <a href="#" id="madura" class="block py-2 px-4 text-sm text-gray-700 hover:text-main dark:hover:text-main dark:text-white" role="menuitem">
                           <div class="inline-flex items-center">
                             <span class="h-3.5 w-3.5 rounded-full mr-2 fi fi-gb"></span>
                             madura
@@ -136,13 +127,12 @@
       </div>
     </header>
 
-    <!-- ISII -->
-
+    <!-- ISII -->ssssssssssss
     <!-- Home -->
 
     <div id="home" class="grad relative gradien dark:bg-neutral-900 w-full h-screen">
       <div class="flex">
-        <div class="z-40 grid grid-cols-9 w-full h-screen content-center tracking-tight text-white">
+        <div class="pembukaan1 z-40 grid grid-cols-9 w-full h-screen content-center tracking-tight text-white">
           <h1 class="mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
             LANGKAH AWAL<br /><span class="font-thin">UNTUK MEMULAI <br /></span><span class="text-5xl">KEBAIKAN</span>
             <p class="block mt-4 text-xl 2xl:text-3xl font-thin">
@@ -175,8 +165,8 @@
           <img src="./assets/element/bundar 2.svg" alt="" class="absolute w-[100px] lg:w-[150px] bottom-2 right-0" />
 
           <img src="./assets/element/garis tuipispipis2.svg" alt="" class="h-[200px] mr-3 w-0.5 md:h-[150px] md:w-[3px] lg:w-1 bg-white rounded-full" />
-          <div class="flex text-left text-lg md:text-2xl 2xl:text-4xl text-white font-medium antialiased w-[80%] md:w-[85%] lg:w-[90%] 2xl:w-[96%]">
-            <p><span class="text-xl md:text-3xl 2xl:text-6xl">Sebuah</span> organisasi muda yang siap untuk membangkitkan kesejahteraan masyarakat indonesia dengan menyatukan kepedulian bersama dan menuangkannya kepada yang membutuhkan.</p>
+          <div class="pembukaan flex text-left text-lg md:text-2xl 2xl:text-4xl text-white font-medium antialiased w-[80%] md:w-[85%] lg:w-[90%] 2xl:w-[96%]">
+            <p><span class=" text-xl md:text-3xl 2xl:text-6xl">INDONESIA</span> organisasi muda yang siap untuk membangkitkan kesejahteraan masyarakat indonesia dengan menyatukan kepedulian bersama dan menuangkannya kepada yang membutuhkan.</p>
           </div>
         </div>
       </div>
