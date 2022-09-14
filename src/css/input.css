@@ -10,7 +10,13 @@
 
 .hamburger-line {
   @apply w-7 h-[2px] my-2 block;
-  background-color: black;
+}
+
+.black {
+  @apply bg-black;
+}
+.white {
+  @apply bg-white;
 }
 
 .navbar-fixed {

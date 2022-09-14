@@ -5,6 +5,9 @@ window.onscroll = () => {
   const navMenuLus = document.querySelector('#nav-menu ul');
   const navMenu1 = document.querySelector('.nav-menu1');
   const navMenu2 = document.querySelector('.nav-menu2');
+  const line = document.querySelector('.line');
+  const line1 = document.querySelector('.line2');
+  const line2 = document.querySelector('.line3');
 
   const fixed = header.offsetTop;
 
@@ -14,12 +17,26 @@ window.onscroll = () => {
     navMenuLus.classList.add('text-black');
     navMenu1.classList.add('text-black');
     navMenu2.classList.add('text-black');
+
+    line.classList.remove('white');
+    line.classList.add('black');
+    line1.classList.remove('white');
+    line1.classList.add('black');
+    line2.classList.remove('white');
+    line2.classList.add('black');
   } else {
     header.classList.remove('navbar-fixed');
     navMenu.classList.remove('text-black');
     navMenuLus.classList.remove('text-black');
     navMenu1.classList.remove('text-black');
     navMenu2.classList.remove('text-black');
+
+    line.classList.add('white');
+    line.classList.remove('black');
+    line1.classList.add('white');
+    line1.classList.remove('black');
+    line2.classList.add('white');
+    line2.classList.remove('black');
   }
 };
 
@@ -42,8 +59,8 @@ languageButton.addEventListener('click', () => {
 
 const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-const gradien = document.querySelectorAll('.grad');
-console.log('grad', gradien);
+// const gradien = document.querySelectorAll('.grad');
+// console.log('grad', gradien);
 
 // mengganti icon dalam tombol tergantung local storage
 if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -65,17 +82,17 @@ themeToggleBtn.addEventListener('click', function () {
     if (localStorage.getItem('color-theme') === 'light') {
       document.documentElement.classList.add('dark');
       localStorage.setItem('color-theme', 'dark');
-      // gradien[0].classList.remove('gradien');
-      gradien.forEach((element) => {
-        element.classList.remove('gradien');
-      });
+
+      // gradien.forEach((element) => {
+      //   element.classList.remove('gradien');
+      // });
     } else {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('color-theme', 'light');
-      // gradien[0].classList.add('gradien');
-      gradien.forEach((element) => {
-        element.classList.add('gradien');
-      });
+
+      // gradien.forEach((element) => {
+      //   element.classList.add('gradien');
+      // });
     }
 
     //Jika belum ada di local storage
@@ -83,19 +100,23 @@ themeToggleBtn.addEventListener('click', function () {
     if (document.documentElement.classList.contains('dark')) {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('color-theme', 'light');
-      // gradien[0].classList.add('gradien');
-      gradien.forEach((element) => {
-        element.classList.add('gradien');
-      });
+
+      // gradien.forEach((element) => {
+      //   element.classList.add('gradien');
+      // });
     } else {
       document.documentElement.classList.add('dark');
       localStorage.setItem('color-theme', 'dark');
-      // gradien[0].classList.remove('gradien');
-      gradien.forEach((element) => {
-        element.classList.remove('gradien');
-      });
+
+      // gradien.forEach((element) => {
+      //   element.classList.remove('gradien');
+      // });
     }
   }
 });
 
-// Language
+// themeToggleBtn.addEventListener(() => {
+//   gradien.forEach((element) => {
+//     element.classList.toggle('gradien');
+//   });
+// });
