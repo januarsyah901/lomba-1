@@ -110,7 +110,7 @@ $(document).ready(function () {
     $(".visi").text("mewujudkan kesejahteraan bagi masyarakat Indonesia yang merupakan cita-cita luhur kemerdekaan. Menjadikan semua merasakan sila kedua, yaitu kemanusiaan yang adil dan beradab bersama.");
     $(".misi").text("menyumbangkan kepedulian kita berupa, pakaian layak pakai, sembako, dan juga dana untuk membeli air besih bagi mereka yang membutuhkan dan kebutuhan lainnya.");
     $(".ag1").text("Berbagi sembako kepada masyarakat sekitar");
-    $(".ag2").text("Kerj bakti membersihkan lingkungan");
+    $(".ag2").text("Kerja bakti membersihkan lingkungan");
     $(".ag3").text("Berbagi bahan makanan");
     $(".ag4").text("Bantuan korban bencana");
     $(".ag5").text("Berbagi bersama anggota TNI");
