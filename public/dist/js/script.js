@@ -40,19 +40,19 @@ window.onscroll = () => {
   }
 };
 
-const hamburger = document.querySelector('#hamburger');
-const languageButton = document.querySelector('#language-dropdown-button');
-const languageMenu = document.querySelector('#language-dropdown-menu');
-const languagedrop = document.querySelector('#language-dropdown-select');
-const navMenu = document.querySelector('#nav-menu');
+const hamburger = document.querySelector("#hamburger");
+const languageButton = document.querySelector("#language-dropdown-button");
+const languageMenu = document.querySelector("#language-dropdown-menu");
+const languagedrop = document.querySelector("#language-dropdown-select");
+const navMenu = document.querySelector("#nav-menu");
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('hamburger-active');
-  navMenu.classList.toggle('hidden');
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("hamburger-active");
+  navMenu.classList.toggle("hidden");
 });
-languageButton.addEventListener('click', () => {
-  languageMenu.classList.toggle('hidden');
-  languagedrop.classList.toggle('flag-active');
+languageButton.addEventListener("click", () => {
+  languageMenu.classList.toggle("hidden");
+  languagedrop.classList.toggle("flag-active");
 });
 
 // Dark mode
@@ -61,19 +61,19 @@ const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
 // mengganti icon dalam tombol tergantung local storage
-if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  themeToggleLightIcon.classList.remove('hidden');
-  themeToggleDarkIcon.classList.add('hidden');
+if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+  themeToggleLightIcon.classList.remove("hidden");
+  themeToggleDarkIcon.classList.add("hidden");
 } else {
-  themeToggleDarkIcon.classList.remove('hidden');
+  themeToggleDarkIcon.classList.remove("hidden");
 }
 
-const themeToggleBtn = document.getElementById('theme-toggle');
+const themeToggleBtn = document.getElementById("theme-toggle");
 
-themeToggleBtn.addEventListener('click', function () {
+themeToggleBtn.addEventListener("click", function () {
   // icon dalam tombol
-  themeToggleDarkIcon.classList.toggle('hidden');
-  themeToggleLightIcon.classList.toggle('hidden');
+  themeToggleDarkIcon.classList.toggle("hidden");
+  themeToggleLightIcon.classList.toggle("hidden");
 
   // jika sebelumnya udah ada di local storage
   if (localStorage.getItem('color-theme')) {
