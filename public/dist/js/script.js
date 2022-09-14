@@ -96,3 +96,115 @@ themeToggleBtn.addEventListener("click", function () {
     }
   }
 });
+$(document).ready(function () {
+  $("#indonesia").click(function () {
+    $(".nav1").text("Beranda");
+    $(".nav2").text("Agenda");
+    $(".nav3").text("Tentang");
+    $(".nav4").text("Galeri");
+    $(".bahasa").text("Indonesia");
+    $(".pembukaan1").html(`<p class="pembukaan1">
+    <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Sebuah</span> organisasi muda yang siap untuk membangkitkan kesejahteraan masyarakat indonesia dengan menyatukan kepedulian bersama dan menuangkannya kepada yang membutuhkan.
+  </p>`);
+    $(".pembukaan").html();
+    $(".visi").text("mewujudkan kesejahteraan bagi masyarakat Indonesia yang merupakan cita-cita luhur kemerdekaan. Menjadikan semua merasakan sila kedua, yaitu kemanusiaan yang adil dan beradab bersama.");
+    $(".misi").text("menyumbangkan kepedulian kita berupa, pakaian layak pakai, sembako, dan juga dana untuk membeli air besih bagi mereka yang membutuhkan dan kebutuhan lainnya.");
+    $(".ag1").text("Berbagi sembako kepada masyarakat sekitar");
+    $(".ag2").text("Kerj bakti membersihkan lingkungan");
+    $(".ag3").text("Berbagi bahan makanan");
+    $(".ag4").text("Bantuan korban bencana");
+    $(".ag5").text("Berbagi bersama anggota TNI");
+    $(".ag6").text("Santunan kepada anak yatim piatu");
+    $(".fatih").text("Kepedulian menjadi salah satu bukti bahwa semua orang memiliki sisi baiknya");
+    $(".sabra").text("Satu kepedulian bisa menumbuhkan berjuta kebahagiaan.");
+    $(".januarsyah").text("Ketika kamu peduli, kebahagiaan akan berpihak padanya dan dirimu.");
+  });
+  $("#jawa").click(function () {
+    $(".nav1").text("Omah");
+    $(".nav2").text("agenda");
+    $(".nav3").text("A dewe");
+    $(".nav4").text("Layar");
+    $(".bahasa").text("Jawa");
+    $(".pembukaan1").html(`<p class="pembukaan1">
+    <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Organisasi</span>  nom-noman kang siyaga ngunggahake karaharjaning bangsa Indonesia kanthi nyawijikake keprihatinan umum lan diwutahake marang sing butuh.
+  </p>`);
+    $(".pembukaan").html();
+    $(".visi").text(" mujudake kamakmuran tumrap bangsa Indonesia kang minangka cita-cita luhur kamardikan. Dados sadaya sami ngraosaken pranatan ingkang kaping kalih, inggih punika kamanungsan ingkang adil lan beradab sesarengan. ");
+    $(".misi").text("Nyumbangake perawatan arupa sandhangan sing layak, kabutuhan dhasar, lan uga dana kanggo tuku banyu resik kanggo wong sing butuh lan kabutuhan liyane. ");
+    $(".ag1").text("Nuduhake sembako kanggo masyarakat");
+    $(".ag2").text("Ngresiki lingkungan bebarengan");
+    $(".ag3").text("Nuduhake bahan panganan");
+    $(".ag4").text("Bantuan korban bencana");
+    $(".ag5").text("Nuduhake bareng karo anggota TNI");
+    $(".ag6").text("Sumbangan kanggo bocah yatim piatu");
+    $(".fatih").text("Ngrawat minangka salah sawijining bukti yen saben wong duwe sisi apik");
+    $(".sabra").text("Siji prihatin bisa tuwuh jutaan rasa seneng.");
+    $(".januarsyah").text("Yen sampeyan peduli, rasa seneng bakal ana ing sisihe lan sampeyan.");
+  });
+  $("#sunda").click(function () {
+    $(".nav1").text("Imah");
+    $(".nav2").text("Agenda");
+    $(".nav3").text("Urang");
+    $(".nav4").text("Galeri");
+    $(".bahasa").text("Sunda");
+    $(".pembukaan1").html(`<p class="pembukaan1">
+    <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Organisasi</span> anu siap kangge ngabangkitkeun kasejahteraan masyarakat indonesia ku nganyatukeun kapadulian sarerea jeung nganuangkeunna kanu ngabutuhkeun.
+  </p>`);
+    $(".pembukaan").html();
+    $(".visi").text(" Ngawujudkeun kasejahteraan kangge masyarakat indonesia anu mangrupakeun cita cita leluhur kamerdekaan.ngajadikeun sadaya ngarasakeun sila kadua,nyaeta kemanusiaan yang adil dan beradab. ");
+    $(".misi").text(" Nganyumbangkeun kapedulian urang mangrupa ,pakean anu masih layak di angge,sembako,sareng oge data kangge meser cai bersih kangge anu butuh tur kabutuhan nu sanesna. ");
+    $(".ag1").text("Babagi sembako jeung masarakat sabudeureun");
+    $(".ag2").text("Ngabersihan lingkungan babarengan");
+    $(".ag3").text("Ngadistribusikaeun sembako");
+    $(".ag4").text("Mantuan korban bencana");
+    $(".ag5").text("Babagi kalawan anggota TNI");
+    $(".ag6").text("Babagi jeung yatim piatu");
+    $(".fatih").text("Miara mangrupa salah sahiji bukti yén unggal jalma boga sisi alus");
+    $(".sabra").text("Hiji perhatian bisa tumuwuh jutaan kabagjaan.");
+    $(".januarsyah").text("Nalika anjeun paduli, kabagjaan bakal aya di sisi anjeunna sareng anjeun.");
+  });
+  $("#english").click(function () {
+    $(".nav1").text("Home");
+    $(".nav2").text("Plan");
+    $(".nav3").text("About");
+    $(".nav4").text("Galery");
+    $(".bahasa").text("English");
+    $(".pembukaan1").html(`<p class="pembukaan1">
+    <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">A young organization</span>that is ready to raise the welfare of the Indonesian people by uniting common concerns and pouring them into those in need
+  </p>`);
+    $(".pembukaan").html();
+    $(".visi").text(" contribute to the welfare of the people of Indonesia which is the noble ideal of independence. Making all feel the second precept, namely a just and civilized humanity together.  ");
+    $(".misi").text(" provide our care in the form of proper clothing, basic necessities, and also funds to buy clean water for those in need and other needs. ");
+    $(".ag1").text("Share groceries with the surrounding community");
+    $(".ag2").text("Clean the environment together");
+    $(".ag3").text("Distribute food ingredients");
+    $(".ag4").text("Help disaster victims");
+    $(".ag5").text("Share with military members");
+    $(".ag6").text("Share with orphans");
+    $(".fatih").text("Caring is one proof that everyone has a good side");
+    $(".sabra").text("One concern can grow millions of happiness.");
+    $(".januarsyah").text("When you care, happiness will be on his side and you.");
+  });
+  $("#madura").click(function () {
+    $(".nav1").text("Compok");
+    $(".nav2").text("Kalakoan");
+    $(".nav3").text("Abhek");
+    $(".nav4").text("Galeri");
+    $(".bahasa").text("Madura");
+    $(".pembukaan1").html(`<p class="pembukaan1">
+    <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Abhek</span> perkompolan ngodeh se siap ngebey jegeh aghi kesejahteraan masyarakat indonesia engak apolong aghi  kepedulian abhereng ambik mengaliraghi ngebey masyarakat se butoh.
+  </p>`);
+    $(".pembukaan").html();
+    $(".visi").text(" menyumbang aghi kesejahteraan ghebey masyarakat indonesia se aropaaghi cita-cita luhur kemerdekaan. aghebey kabbi arrasahaghi sila ke dua, ajieh kemanusiaan se adil lan beradab se aberem");
+    $(".misi").text(" menyumbang aghi kepedulian abek aropa aghi,klambih layak angghuy,sembako,lan tak loppa dana nghabay aeng berse nghabay masyarakat se butoh lan kabutohan se laen");
+    $(".ag1").text("Berbagi sembako ka masyarakat esekitar abhek");
+    $(".ag2").text("Abersehaghi lingkungan esekitar areng bhereng");
+    $(".ag3").text("Membagikan bahan-bahan kakanan");
+    $(".ag4").text("Abentoh korban bencana");
+    $(".ag5").text("Berbagi abhereng anggota TNI");
+    $(".ag6").text("Berbagi ka nak kanak jetem");
+    $(".fatih").text("kepedulilan deddi salah settong bukte sa ongguna kebbih oreng andik sisi bagusseh");
+    $(".sabra").text("settong kepedulian bisa namba aghi berjuta kabungaan");
+    $(".januarsyah").text("mon bekna peduli, kabungaan apihak ka jeriya dan bekna");
+  });
+});
