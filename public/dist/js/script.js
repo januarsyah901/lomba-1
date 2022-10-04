@@ -106,6 +106,13 @@ $(document).ready(function () {
     $('.pembukaan1').html(`<p class="pembukaan1">
     <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Sebuah</span> organisasi muda yang siap untuk membangkitkan kesejahteraan masyarakat indonesia dengan menyatukan kepedulian bersama dan menuangkannya kepada yang membutuhkan.
   </p>`);
+    $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
+    LANGKAH AWAL<br /><span class="font-thin">UNTUK MEMULAI <br /></span><span class="">KEBAIKAN</span>
+    <p class="block mt-4 text-xl 2xl:text-3xl font-thin">
+      mari salurkan <br />
+      kepedulian anda
+    </p>
+  </h1>`);
     $('.pembukaan').html();
     $('.visi').text('mewujudkan kesejahteraan bagi masyarakat Indonesia yang merupakan cita-cita luhur kemerdekaan. Menjadikan semua merasakan sila kedua, yaitu kemanusiaan yang adil dan beradab bersama.');
     $('.misi').text('menyumbangkan kepedulian kita berupa, pakaian layak pakai, sembako, dan juga dana untuk membeli air besih bagi mereka yang membutuhkan dan kebutuhan lainnya.');
@@ -128,6 +135,13 @@ $(document).ready(function () {
     $('.pembukaan1').html(`<p class="pembukaan1">
     <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Organisasi</span>  nom-noman kang siyaga ngunggahake karaharjaning bangsa Indonesia kanthi nyawijikake keprihatinan umum lan diwutahake marang sing butuh.
   </p>`);
+  $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
+  LAMPAHAN AWAL<br /><span class="font-thin">KANGGE MIWITI <br /></span><span class="">KESAENAN</span>
+  <p class="block mt-4 text-xl 2xl:text-3xl font-thin">
+    mangga salurkan <br />
+    kepedulian panjenengan
+  </p>
+</h1>`);
     $('.pembukaan').html();
     $('.visi').text(' mujudake kamakmuran tumrap bangsa Indonesia kang minangka cita-cita luhur kamardikan. Dados sadaya sami ngraosaken pranatan ingkang kaping kalih, inggih punika kamanungsan ingkang adil lan beradab sesarengan. ');
     $('.misi').text('Nyumbangake perawatan arupa sandhangan sing layak, kabutuhan dhasar, lan uga dana kanggo tuku banyu resik kanggo wong sing butuh lan kabutuhan liyane. ');
@@ -150,6 +164,14 @@ $(document).ready(function () {
     $('.pembukaan1').html(`<p class="pembukaan1">
     <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Organisasi</span> anu siap kangge ngabangkitkeun kasejahteraan masyarakat indonesia ku nganyatukeun kapadulian sarerea jeung nganuangkeunna kanu ngabutuhkeun.
   </p>`);
+  $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
+  
+LENGKAH MUNGGARAN <br /><span class="font-thin">PIKEUN NGAMIMITIAN <br /></span><span class="">KEHADEAN</span>
+  <p class="block mt-4 text-xl 2xl:text-3xl font-thin">
+  hayu urang bagikeun  <br />
+  perhatian Anjeun
+  </p>
+</h1>`);
     $('.pembukaan').html();
     $('.visi').text(' Ngawujudkeun kasejahteraan kangge masyarakat indonesia anu mangrupakeun cita cita leluhur kamerdekaan.ngajadikeun sadaya ngarasakeun sila kadua,nyaeta kemanusiaan yang adil dan beradab. ');
     $('.misi').text(' Nganyumbangkeun kapedulian urang mangrupa ,pakean anu masih layak di angge,sembako,sareng oge data kangge meser cai bersih kangge anu butuh tur kabutuhan nu sanesna. ');
@@ -175,6 +197,14 @@ $(document).ready(function () {
     $('.pembukaan').html();
     $('.visi').text(' contribute to the welfare of the people of Indonesia which is the noble ideal of independence. Making all feel the second precept, namely a just and civilized humanity together.  ');
     $('.misi').text(' provide our care in the form of proper clothing, basic necessities, and also funds to buy clean water for those in need and other needs. ');
+    $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
+  
+      THE FIRST STEP  <br /><span class="font-thin">TO START <br /></span><span class="">GOODNESS</span>
+      <p class="block mt-4 text-xl 2xl:text-3xl font-thin">
+      let's spread   <br />
+      your kindness
+      </p>
+    </h1>`);
     $('.ag1').text('Share groceries with the surrounding community');
     $('.ag2').text('Clean the environment together');
     $('.ag3').text('Distribute food ingredients');
@@ -194,6 +224,14 @@ $(document).ready(function () {
     $('.pembukaan1').html(`<p class="pembukaan1">
     <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Abhek</span> perkompolan ngodeh se siap ngebey jegeh aghi kesejahteraan masyarakat indonesia engak apolong aghi  kepedulian abhereng ambik mengaliraghi ngebey masyarakat se butoh.
   </p>`);
+  $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
+  
+  THE FIRST STEP  <br /><span class="font-thin">TO START <br /></span><span class="">GOODNESS</span>
+  <p class="block mt-4 text-xl 2xl:text-3xl font-thin">
+  let's spread   <br />
+  your kindness
+  </p>
+</h1>`);
     $('.pembukaan').html();
     $('.visi').text(' menyumbang aghi kesejahteraan ghebey masyarakat indonesia se aropaaghi cita-cita luhur kemerdekaan. aghebey kabbi arrasahaghi sila ke dua, ajieh kemanusiaan se adil lan beradab se aberem');
     $('.misi').text(' menyumbang aghi kepedulian abek aropa aghi,klambih layak angghuy,sembako,lan tak loppa dana nghabay aeng berse nghabay masyarakat se butoh lan kabutohan se laen');
