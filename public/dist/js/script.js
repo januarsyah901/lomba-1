@@ -128,14 +128,14 @@ $(document).ready(function () {
   });
   $('#jawa').click(function () {
     $('.nav1').text('Omah');
-    $('.nav2').text('agenda');
+    $('.nav2').text('Agenda');
     $('.nav3').text('A dewe');
     $('.nav4').text('Layar');
     $('.bahasa').text('Jawa');
     $('.pembukaan1').html(`<p class="pembukaan1">
     <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Organisasi</span>  nom-noman kang siyaga ngunggahake karaharjaning bangsa Indonesia kanthi nyawijikake keprihatinan umum lan diwutahake marang sing butuh.
   </p>`);
-  $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
+    $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
   LAMPAHAN AWAL<br /><span class="font-thin">KANGGE MIWITI <br /></span><span class="">KESAENAN</span>
   <p class="block mt-4 text-xl 2xl:text-3xl font-thin">
     mangga salurkan <br />
@@ -164,7 +164,7 @@ $(document).ready(function () {
     $('.pembukaan1').html(`<p class="pembukaan1">
     <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Organisasi</span> anu siap kangge ngabangkitkeun kasejahteraan masyarakat indonesia ku nganyatukeun kapadulian sarerea jeung nganuangkeunna kanu ngabutuhkeun.
   </p>`);
-  $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
+    $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
   
 LENGKAH MUNGGARAN <br /><span class="font-thin">PIKEUN NGAMIMITIAN <br /></span><span class="">KEHADEAN</span>
   <p class="block mt-4 text-xl 2xl:text-3xl font-thin">
@@ -224,12 +224,12 @@ LENGKAH MUNGGARAN <br /><span class="font-thin">PIKEUN NGAMIMITIAN <br /></span>
     $('.pembukaan1').html(`<p class="pembukaan1">
     <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Abhek</span> perkompolan ngodeh se siap ngebey jegeh aghi kesejahteraan masyarakat indonesia engak apolong aghi  kepedulian abhereng ambik mengaliraghi ngebey masyarakat se butoh.
   </p>`);
-  $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
+    $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
   
-  THE FIRST STEP  <br /><span class="font-thin">TO START <br /></span><span class="">GOODNESS</span>
+  LENGKAH SETTONG  <br /><span class="font-thin">GHABAY MOLAE <br /></span><span class="">SE BECCE</span>
   <p class="block mt-4 text-xl 2xl:text-3xl font-thin">
-  let's spread   <br />
-  your kindness
+   mara sebar <br />
+  bekna becce
   </p>
 </h1>`);
     $('.pembukaan').html();
