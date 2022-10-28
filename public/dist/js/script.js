@@ -104,7 +104,7 @@ $(document).ready(function () {
     $('.nav4').text('Galeri');
     $('.bahasa').text('Indonesia');
     $('.pembukaan1').html(`<p class="pembukaan1">
-    <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Sebuah</span> organisasi muda yang siap untuk membangkitkan kesejahteraan masyarakat indonesia dengan menyatukan kepedulian bersama dan menuangkannya kepada yang membutuhkan.
+    <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Sebuah</span> organisasi muda yang siap untuk membangkitkan kesejahteraan masyarakat Indonesia dengan menyatukan kepedulian bersama dan menuangkannya kepada yang membutuhkan.
   </p>`);
     $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
     LANGKAH AWAL<br /><span class="font-thin">UNTUK MEMULAI <br /></span><span class="">KEBAIKAN</span>
@@ -114,8 +114,8 @@ $(document).ready(function () {
     </p>
   </h1>`);
     $('.pembukaan').html();
-    $('.visi').text('mewujudkan kesejahteraan bagi masyarakat Indonesia yang merupakan cita-cita luhur kemerdekaan. Menjadikan semua merasakan sila kedua, yaitu kemanusiaan yang adil dan beradab bersama.');
-    $('.misi').text('menyumbangkan kepedulian kita berupa, pakaian layak pakai, sembako, dan juga dana untuk membeli air besih bagi mereka yang membutuhkan dan kebutuhan lainnya.');
+    $('.visi').text('Mewujudkan kesejahteraan bagi masyarakat Indonesia yang merupakan cita-cita luhur kemerdekaan. Menjadikan semua merasakan sila kedua, yaitu kemanusiaan yang adil dan beradab bersama.');
+    $('.misi').text('Menyumbangkan kepedulian kita berupa, pakaian layak pakai, sembako, dan juga dana untuk membeli air besih bagi mereka yang membutuhkan dan kebutuhan lainnya.');
     $('.ag1').text('Berbagi sembako kepada masyarakat sekitar');
     $('.ag2').text('Kerja bakti membersihkan lingkungan');
     $('.ag3').text('Berbagi bahan makanan');
@@ -143,7 +143,7 @@ $(document).ready(function () {
   </p>
 </h1>`);
     $('.pembukaan').html();
-    $('.visi').text(' mujudake kamakmuran tumrap bangsa Indonesia kang minangka cita-cita luhur kamardikan. Dados sadaya sami ngraosaken pranatan ingkang kaping kalih, inggih punika kamanungsan ingkang adil lan beradab sesarengan. ');
+    $('.visi').text('Mujudake kamakmuran tumrap bangsa Indonesia kang minangka cita-cita luhur kamardikan. Dados sadaya sami ngraosaken pranatan ingkang kaping kalih, inggih punika kamanungsan ingkang adil lan beradab sesarengan. ');
     $('.misi').text('Nyumbangake perawatan arupa sandhangan sing layak, kabutuhan dhasar, lan uga dana kanggo tuku banyu resik kanggo wong sing butuh lan kabutuhan liyane. ');
     $('.ag1').text('Nuduhake sembako kanggo masyarakat');
     $('.ag2').text('Ngresiki lingkungan bebarengan');
@@ -162,7 +162,7 @@ $(document).ready(function () {
     $('.nav4').text('Galeri');
     $('.bahasa').text('Sunda');
     $('.pembukaan1').html(`<p class="pembukaan1">
-    <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Organisasi</span> anu siap kangge ngabangkitkeun kasejahteraan masyarakat indonesia ku nganyatukeun kapadulian sarerea jeung nganuangkeunna kanu ngabutuhkeun.
+    <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Organisasi</span> anu siap kangge ngabangkitkeun kasejahteraan masyarakat Indonesia ku nganyatukeun kapadulian sarerea jeung nganuangkeunna kanu ngabutuhkeun.
   </p>`);
     $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
   
@@ -173,7 +173,7 @@ LENGKAH MUNGGARAN <br /><span class="font-thin">PIKEUN NGAMIMITIAN <br /></span>
   </p>
 </h1>`);
     $('.pembukaan').html();
-    $('.visi').text(' Ngawujudkeun kasejahteraan kangge masyarakat indonesia anu mangrupakeun cita cita leluhur kamerdekaan.ngajadikeun sadaya ngarasakeun sila kadua,nyaeta kemanusiaan yang adil dan beradab. ');
+    $('.visi').text(' Ngawujudkeun kasejahteraan kangge masyarakat Indonesia anu mangrupakeun cita cita leluhur kamerdekaan.ngajadikeun sadaya ngarasakeun sila kadua,nyaeta kemanusiaan yang adil dan beradab. ');
     $('.misi').text(' Nganyumbangkeun kapedulian urang mangrupa ,pakean anu masih layak di angge,sembako,sareng oge data kangge meser cai bersih kangge anu butuh tur kabutuhan nu sanesna. ');
     $('.ag1').text('Babagi sembako jeung masarakat sabudeureun');
     $('.ag2').text('Ngabersihan lingkungan babarengan');
@@ -222,7 +222,7 @@ LENGKAH MUNGGARAN <br /><span class="font-thin">PIKEUN NGAMIMITIAN <br /></span>
     $('.nav4').text('Galeri');
     $('.bahasa').text('Madura');
     $('.pembukaan1').html(`<p class="pembukaan1">
-    <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Abhek</span> perkompolan ngodeh se siap ngebey jegeh aghi kesejahteraan masyarakat indonesia engak apolong aghi  kepedulian abhereng ambik mengaliraghi ngebey masyarakat se butoh.
+    <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">Abhek</span> perkompolan ngodeh se siap ngebey jegeh aghi kesejahteraan masyarakat Indonesia engak apolong aghi  kepedulian abhereng ambik mengaliraghi ngebey masyarakat se butoh.
   </p>`);
     $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
   
@@ -233,7 +233,7 @@ LENGKAH MUNGGARAN <br /><span class="font-thin">PIKEUN NGAMIMITIAN <br /></span>
   </p>
 </h1>`);
     $('.pembukaan').html();
-    $('.visi').text(' menyumbang aghi kesejahteraan ghebey masyarakat indonesia se aropaaghi cita-cita luhur kemerdekaan. aghebey kabbi arrasahaghi sila ke dua, ajieh kemanusiaan se adil lan beradab se aberem');
+    $('.visi').text(' menyumbang aghi kesejahteraan ghebey masyarakat Indonesia se aropaaghi cita-cita luhur kemerdekaan. aghebey kabbi arrasahaghi sila ke dua, ajieh kemanusiaan se adil lan beradab se aberem');
     $('.misi').text(' menyumbang aghi kepedulian abek aropa aghi,klambih layak angghuy,sembako,lan tak loppa dana nghabay aeng berse nghabay masyarakat se butoh lan kabutohan se laen');
     $('.ag1').text('Berbagi sembako ka masyarakat esekitar abhek');
     $('.ag2').text('Abersehaghi lingkungan esekitar areng bhereng');
