@@ -195,8 +195,8 @@ LENGKAH MUNGGARAN <br /><span class="font-thin">PIKEUN NGAMIMITIAN <br /></span>
     <span class="text-2xl md:text-3xl 2xl:text-6xl italic font-bold">A young organization</span>that is ready to raise the welfare of the Indonesian people by uniting common concerns and pouring them into those in need
   </p>`);
     $('.pembukaan').html();
-    $('.visi').text(' contribute to the welfare of the people of Indonesia which is the noble ideal of independence. Making all feel the second precept, namely a just and civilized humanity together.  ');
-    $('.misi').text(' provide our care in the form of proper clothing, basic necessities, and also funds to buy clean water for those in need and other needs. ');
+    $('.visi').text(' Contribute to the welfare of the people of Indonesia which is the noble ideal of independence. Making all feel the second precept, namely a just and civilized humanity together. ');
+    $('.misi').text(' Provide our care in the form of proper clothing, basic necessities, and also funds to buy clean water for those in need and other needs. ');
     $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
   
       THE FIRST STEP  <br /><span class="font-thin">TO START <br /></span><span class="">GOODNESS</span>
@@ -226,10 +226,10 @@ LENGKAH MUNGGARAN <br /><span class="font-thin">PIKEUN NGAMIMITIAN <br /></span>
   </p>`);
     $('.awal').html(` <h1  class="awal mt-32 font-bold text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl col-start-2 col-span-8">
   
-  LENGKAH SETTONG  <br /><span class="font-thin">GHABAY MOLAE <br /></span><span class="">SE BECCE</span>
+  LANGKAH SAPERTAMA  <br /><span class="font-thin">GHEBEY MAMOLAI <br /></span><span class="">KABEGUSEN</span>
   <p class="block mt-4 text-xl 2xl:text-3xl font-thin">
-   mara sebar <br />
-  bekna becce
+   mara salur aghi <br />
+  kaperdulien panjenenganna
   </p>
 </h1>`);
     $('.pembukaan').html();
