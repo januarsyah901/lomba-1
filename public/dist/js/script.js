@@ -233,8 +233,8 @@ LENGKAH MUNGGARAN <br /><span class="font-thin">PIKEUN NGAMIMITIAN <br /></span>
   </p>
 </h1>`);
     $('.pembukaan').html();
-    $('.visi').text(' menyumbang aghi kesejahteraan ghebey masyarakat Indonesia se aropaaghi cita-cita luhur kemerdekaan. aghebey kabbi arrasahaghi sila ke dua, ajieh kemanusiaan se adil lan beradab se aberem');
-    $('.misi').text(' menyumbang aghi kepedulian abek aropa aghi,klambih layak angghuy,sembako,lan tak loppa dana nghabay aeng berse nghabay masyarakat se butoh lan kabutohan se laen');
+    $('.visi').text(' Menyumbang aghi kesejahteraan ghebey masyarakat Indonesia se aropaaghi cita-cita luhur kemerdekaan. aghebey kabbi arrasahaghi sila ke dua, ajieh kemanusiaan se adil lan beradab se aberem');
+    $('.misi').text(' Menyumbang aghi kepedulian abek aropa aghi,klambih layak angghuy,sembako,lan tak loppa dana nghabay aeng berse nghabay masyarakat se butoh lan kabutohan se laen');
     $('.ag1').text('Berbagi sembako ka masyarakat esekitar abhek');
     $('.ag2').text('Abersehaghi lingkungan esekitar areng bhereng');
     $('.ag3').text('Membagikan bahan-bahan kakanan');
